@@ -1,0 +1,41 @@
+## Docker official docs
+https://docs.docker.com/get-started/overview/
+
+## To see the Docker hub 
+https://hub.docker.com/
+
+## To check version of docker
+docker -v
+
+## To run a image and make it a container we use this command. 
+docker run <image name> 
+
+## To globally serach images on the docker hub 
+docker search <image name>
+
+## To check images on local machine 
+docker images
+
+## To pull an image from docker hub 
+docker pull <image name>
+
+## To check containers initialize 
+docker ps
+
+## To check all containers 
+docker ps -a
+
+## To create container and give it a name with image_name or image_id
+docker run --name <name that you want> -d(for detached) <image name/image id>
+ note- this will invoke and close the container
+
+## To create container in interactive mode
+docker run --name <name that you want> -it -d <image_name/image_id>
+
+## To inspect-to see all info about container
+docker inspect <container_id>
+
+## To execute the container and run it 
+docker exec -it <container_id> <command_name>
+
+## 
